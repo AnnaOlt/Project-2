@@ -8,5 +8,6 @@ CREATE TABLE questions (
     id INT PRIMARY KEY AUTO_INCREMENT,
     question VARCHAR
 (255) NOT NULL,
-    answer BOOLEAN
+    answerone BOOLEAN,
+    answertwo BOOLEAN
 );
