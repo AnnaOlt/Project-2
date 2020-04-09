@@ -9,7 +9,7 @@ const db        = {};
 const { MYSQL_DATABASE, MYSQL_HOST, MYSQL_PORT, MYSQL_USER, MYSQL_PASS } = process.env;
 
 const sequelize = new Sequelize(
-  MYSQL_DATABASE || 'wyr_db', 
+  MYSQL_DATABASE || 'wouldyourather_db', 
   MYSQL_USER || 'root',
   MYSQL_PASS || 'password', 
   {
