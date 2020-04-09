@@ -1,20 +1,28 @@
 'use strict';
 
-var fs        = require('fs');
-var path      = require('path');
-var Sequelize = require('sequelize');
-var basename  = path.basename(module.filename);
-var env       = process.env.NODE_ENV || 'development';
-var config    = require(__dirname + '/../config/config.json')[env];
-var db        = {};
+const fs        = require('fs');
+const path      = require('path');
+const Sequelize = require('sequelize');
+const basename  = path.basename(module.filename);
+const db        = {};
 
-var sequelize;
+const { MYSQL_DATABASE, MYSQL_HOST, MYSQL_PORT, MYSQL_USER, MYSQL_PASS } = process.env;
 
-if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable]);
-} else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
-}
+const sequelize = new Sequelize(
+  MYSQL_DATABASE || 'wyr_db', 
+  MYSQL_USER || 'root',
+  MYSQL_PASS || 'password', 
+  {
+    host: MYSQL_HOST || 'localhost', 
+    port: MYSQL_PORT || 3306,
+    dialect: 'mysql',
+    pool: {
+      max: 5,
+      min: 0,
+      idle: 10000
+    }
+  }
+);
 
 fs
   .readdirSync(__dirname)
@@ -22,7 +30,7 @@ fs
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(function(file) {
-    var model = sequelize['import'](path.join(__dirname, file));
+    const model = sequelize['import'](path.join(__dirname, file));
     db[model.name] = model;
   });
 
