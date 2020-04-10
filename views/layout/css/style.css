@@ -68,20 +68,12 @@ body {
 
 #menu .pure-menu ul,
 #menu .pure-menu .menu-item-divided {
-    border-top: 1px solid rgb(68, 67, 67);
+    border-top: 1px solid #074580;
 }
 
 #menu .pure-menu li a:hover,
 #menu .pure-menu li a:focus {
-    background: #333;
-}
-
-#menu .pure-menu-selected,
-#menu .pure-menu-heading {
-    background: #1f8dd6;
-}
-
-#menu .pure-menu-selected a {
+    background: rgb(63, 62, 62);
     color: #fff;
 }
 
