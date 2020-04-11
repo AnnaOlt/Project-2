@@ -1,10 +1,14 @@
 module.exports = function(sequelize, DataTypes) {
   const Question = sequelize.define("question", {
-    left: {
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    left_choice: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    right: {
+    right_choice: {
       type: DataTypes.STRING,
       allowNull: false
     }
