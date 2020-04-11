@@ -191,6 +191,9 @@ strong {
   color: white;
   text-align: center;
 }
+.timer {
+  padding-left: 200px;
+}
 
 #shaking {
   position: relative;
