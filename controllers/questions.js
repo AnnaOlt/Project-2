@@ -54,7 +54,7 @@ router.get('/:id', async function (req, res) {
     res.json(question);
   } else {
     res.status(404).send({ error: 'Question not found!' })
-  };
+  }
 });
 
 
