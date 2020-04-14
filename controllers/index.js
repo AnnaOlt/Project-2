@@ -6,8 +6,8 @@ const userController = require('./users');
 const questionController = require('./questions');
 // const htmlController = require('./html');
 
-router.use('/api/users', userController);
-router.use('/api/questions', questionController);
+router.use('/users', userController);
+router.use('/questions', questionController);
 // router.use('/', htmlController);
 
 module.exports = router;

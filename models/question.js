@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  const Question = sequelize.define("question", {
+  const question = sequelize.define("question", {
     title: {
       type: DataTypes.STRING,
       allowNull: false
@@ -11,16 +11,20 @@ module.exports = function(sequelize, DataTypes) {
     right_choice: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
   });
 
-  Question.associate = function(models) {
+  question.associate = function(models) {
     models.question.hasMany(models.answer, {
-      onDelete: "cascade"
+      onDelete: 'CASCADE'
+    });
+    models.question.belongsTo(models.user, {
+      onDelete: 'CASCADE',
+      foriegnKey: {
+        allowNull: false
+      }
     });
   }
 
-  return Question;
+  return question;
 }
-
-// INSERT INTO questions (left, right) VALUES ('Fight a duck sized horse', 'Fight 100 horse horse sized ducks')
