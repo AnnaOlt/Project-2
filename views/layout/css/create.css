@@ -162,11 +162,11 @@ strong {
   right: 0;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 5%;
+  padding-bottom: 20%;
 }
 
 .splash-head {
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   color: #0078e7;
   border: 2px solid rgb(0, 0, 0);
@@ -174,12 +174,6 @@ strong {
   font-weight: 100;
   border-radius: 5px;
   line-height: 1em;
-}
-
-.splash-subhead {
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.05em;
-  opacity: 0.8;
 }
 
 .footer {
@@ -280,8 +274,12 @@ strong {
   width: 50%;
 }
 
-/* #playBtn {
-  text-align: center;
-  min-height: 60px;
-  min-width: 100px;
-} */
+.info {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 300px;
+  width: 400px;
+  font-size: 25px;
+  border-color: #2196f3;
+  color: dodgerblue;
+}
