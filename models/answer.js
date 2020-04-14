@@ -1,13 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
-  const Answer = sequelize.define("answer", {
+  const answer = sequelize.define("answer", {
     choice: {
       type: DataTypes.BOOLEAN,
       allowNull: false
     }
   });
 
-  Answer.associate = function (models) {
-    console.log(models)
+  answer.associate = function (models) {
     models.answer.belongsTo(models.question, {
       onDelete: 'CASCADE',
       foriegnKey: {
@@ -16,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
     });
   }
 
-  return Answer;
+  return answer;
 }
 
 // INSERT INTO answers ()
