@@ -1,3 +1,18 @@
+var quote = document.getElementById("theme");
+var quote = document.getElementById("theme-display");
+
+$(document).ready(function() {
+    $("#night-mode-js").click(function() {
+        $(".theme-container, .theme, .btn").toggleClass("night-mode");
+        if ($('#night-mode-js').hasClass('night-mode')) {
+            $('#night-mode-js').html('Night-mode');
+        } else {
+            $('#night-mode-js').html('Day-mode');
+        }
+    });
+});
+
+
 (function(window, document) {
 
     var layout = document.getElementById('layout'),
@@ -34,12 +49,6 @@
 
     menuLink.onclick = function(e) {
         toggleAll(e);
-    };
-
-    content.onclick = function(e) {
-        if (menu.className.indexOf('active') !== -1) {
-            toggleAll(e);
-        }
     };
 
 }(this, this.document));

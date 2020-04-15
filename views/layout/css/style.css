@@ -1,5 +1,7 @@
 body {
     color: #777;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #layout,
@@ -29,12 +31,11 @@ body {
 
 .header {
     float: right;
-    color: #0078e7;
+    color: #191818;
     margin: 0;
     font-size: 20px;
     text-align: center;
     padding: 0.1em 2em 0;
-    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .content {
@@ -136,82 +137,16 @@ body {
     margin-top: 0.6em;
 }
 
-strong {
-    color: #0078e7;
-}
-
-.splash-container {
-    background: #ffffff;
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
-    height: 88%;
-    top: 0;
-    left: 0;
-    position: fixed;
-}
-
-.splash {
-    width: 60%;
-    height: 50%;
-    margin: auto;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.splash-head {
-    font-size: 35px;
-    font-weight: bold;
-    color: #0078e7;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 1em 1.6em;
-    font-weight: 100;
-    border-radius: 5px;
-    line-height: 1em;
-}
-
-.splash-subhead {
-    color: rgb(0, 0, 0);
-    letter-spacing: 0.05em;
-    opacity: 0.8;
-}
-
 .footer {
     position: fixed;
     left: 0;
-    height: 30px;
+    height: 250px;
     bottom: 0;
     width: 100%;
     background-color: #191818;
     color: white;
     text-align: center;
-}
-
-#shaking {
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-size: 4vw;
-    text-align: center;
-    font-weight: 900;
-    text-decoration: none;
-    display: inline-block;
-    background-size: 120% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -ms-background-clip: text;
-    -ms-text-fill-color: transparent;
-    background-clip: text;
-    text-emphasis-color: transparent;
-    background-color: #0078e7;
-    animation: 0.2s shake infinite alternate;
+    clip-path: polygon(0 65%, 100% 89%, 100% 100%, 0% 100%);
 }
 
 @keyframes shake {
@@ -265,16 +200,142 @@ strong {
     }
 }
 
-.pure-form {
-    width: 69vw;
-    height: 53%;
-    margin: auto;
-    position: absolute;
-    top: 49px;
-    bottom: 0;
-    right: 0;
+.theme-container {
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    color: rgb(51, 51, 51);
+    height: 1000vh;
 }
 
-.pure-form .pure-input-1-2 {
-    width: 50%;
+.night-mode {
+    background-color: #0078e7;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.splash {
+    width: 64%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: -92px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash-head {
+    font-size: 5.5vh;
+    font-weight: bold;
+    border: 1.4px solid rgb(51, 51, 51);
+    padding: 1em 0.1em;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #191818;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #0078e7;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(253, 253, 253);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(36, 131, 209);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.contact {
+    max-width: 500px;
+    margin: auto;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: rgb(36, 136, 236);
+    color: rgb(255, 255, 255);
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid rgb(179, 182, 185);
+}
+
+.btn {
+    background-color: #191818;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: #4ba3f5;
 }
