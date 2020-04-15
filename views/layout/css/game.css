@@ -276,10 +276,9 @@ strong {
 
 #btn-info {
   padding: 10px;
-  height: auto;
-  width: auto;
-
-  font-size: 25px;
+  height: 15em;
+  width: 15em;
+  font-size: 1.5em;
   background-color: white;
   border-color: #2196f3;
   border-style: solid;
@@ -292,6 +291,9 @@ strong {
   color: white;
 }
 
-.pure-g {
-  border-style: solid;
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
