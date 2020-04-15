@@ -274,16 +274,24 @@ strong {
   width: 50%;
 }
 
-.info {
+#btn-info {
   padding: 10px;
-  height: 300px;
-  width: 400px;
+  height: auto;
+  width: auto;
+
   font-size: 25px;
+  background-color: white;
   border-color: #2196f3;
+  border-style: solid;
+  border-radius: 5%;
   color: dodgerblue;
 }
 
-.info:hover {
+#btn-info:hover {
   background: #2196f3;
   color: white;
+}
+
+.pure-g {
+  border-style: solid;
 }
