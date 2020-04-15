@@ -216,7 +216,7 @@ body {
 
 .splash {
     width: 64%;
-    height: 50%;
+    height: 64%;
     margin: auto;
     position: absolute;
     top: -92px;
@@ -228,7 +228,7 @@ body {
 }
 
 .splash-head {
-    font-size: 5.5vh;
+    font-size: 6.4vh;
     font-weight: bold;
     border: 1.4px solid rgb(51, 51, 51);
     padding: 1em 0.1em;
@@ -319,6 +319,7 @@ input:checked+.slider:before {
     width: 100%;
     padding: 10px;
     outline: none;
+    color: #191818;
 }
 
 .input-field:focus {
@@ -338,4 +339,36 @@ input:checked+.slider:before {
 .btn:hover {
     opacity: 1;
     background-color: #4ba3f5;
+}
+
+.column {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: 145px;
+    text-align: center;
+    background-color: #929292;
 }
