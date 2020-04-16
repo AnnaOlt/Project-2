@@ -18,12 +18,12 @@ module.exports = function(sequelize, DataTypes) {
     models.question.hasMany(models.answer, {
       onDelete: 'CASCADE'
     });
-    models.question.belongsTo(models.user, {
-      onDelete: 'CASCADE',
-      foriegnKey: {
-        allowNull: false
-      }
-    });
+    // models.question.belongsTo(models.user, {
+    //   onDelete: 'CASCADE',
+    //   foriegnKey: {
+    //     allowNull: false
+    //   }
+    // });
   }
 
   return question;
