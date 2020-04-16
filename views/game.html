@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/5ebe19f690.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     <link rel="stylesheet" href="layout/css/game.css">
-    <title>would you rather</title>
+    <title>Would You Rather</title>
 </head>
 
 <body>
@@ -65,22 +65,20 @@
     <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
     </label>
 
-            <div class="splash">
+            <div id="game-container" class="splash">
                 <h1 class="splash-head">WOULD YOU RATHER</h1>
                 <div class="options">
-                    <button class="pure-button" id="btn-info">Option 1</button>
-                    <button class="pure-button" id="btn-info">Option 2</button>
+                    <button id="left_choice" class="pure-button">Option 1</button>
+                    <button id="right_choice" class="pure-button">Option 2</button>
                 </div>
             </div>
         </div>
         <div class="footer"></div>
 
         <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.canvasjs.min.js"></script>
         <script src="js/game.js"></script>
         <script src="js/menu.js"></script>
-
-
-
 
 </body>
 
