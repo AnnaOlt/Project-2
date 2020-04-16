@@ -274,16 +274,26 @@ strong {
   width: 50%;
 }
 
-.info {
+#btn-info {
   padding: 10px;
-  height: 300px;
-  width: 400px;
-  font-size: 25px;
+  height: 15em;
+  width: 15em;
+  font-size: 1.5em;
+  background-color: white;
   border-color: #2196f3;
+  border-style: solid;
+  border-radius: 5%;
   color: dodgerblue;
 }
 
-.info:hover {
+#btn-info:hover {
   background: #2196f3;
   color: white;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
