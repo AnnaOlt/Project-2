@@ -7,19 +7,22 @@
     <meta name="description">
     <script src="https://kit.fontawesome.com/5ebe19f690.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    <link rel="stylesheet" href="layout/css/game.css">
+    <link rel="stylesheet" href="layout/css/style.css">
     <title>would you rather</title>
 </head>
 
 <body>
 
     <div class="header">
-        <h1><i class="fas fa-play-circle fa-lg"></i></h1>
+        <label class="switch">
+            <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
+             </label>
     </div>
     <div class="timer">
-    <h2 class="time"></h2>
-    <div id="main"></div>
+        <h2 class="time"></h2>
+        <div id="main"></div>
     </div>
+
 
     <div id="layout">
 
@@ -30,42 +33,53 @@
 
         <div id="menu">
             <div class="pure-menu">
-                <a class="pure-menu-heading" href="#"><i class="fas fa-cog fa-sm"> Menu </a></i>
+                <a class="pure-menu-heading" href="#"><i class="fas fa-bars fa-sm"> Menu </a></i>
 
                 <ul class="pure-menu-list">
 
-                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link"><i class="fas fa-play-circle fa-sm"> Home </a></i>
+                    <li class="pure-menu-item">
+                        <a href="index.html" class="pure-menu-link">
+                            <i class="fas fa-house-user fa-sm"> Home </a></i>
                     </li>
-
-                    <li class="pure-menu-item"><a href="create.html" class="pure-menu-link"><i class="fas fa-edit fa-sm"> Create Question </a></i>
+                    <li class="pure-menu-item">
+                        <a href="game.html" class="pure-menu-link">
+                            <i class="fas fa-play-circle fa-sm"> Play </a></i>
                     </li>
-
-                    <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link"><i class="far fa-envelope fa-sm"> Contact </a></i>
+                    <li class="pure-menu-item">
+                        <a href="create.html" class="pure-menu-link">
+                            <i class="fas fa-edit fa-sm"> Create Question </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="signup.html" class="pure-menu-link"><i class="fas fa-user-plus"> Sign Up </a></i>
+                    <li class="pure-menu-item">
+                        <a href="signup.html" class="pure-menu-link">
+                            <i class="fas fa-user-plus"> Sign-up </a></i>
                     </li>
                 </ul>
             </div>
         </div>
-      
+
     </div>
 
-    <div class="splash">
-        <h1 class="splash-head">WOULD YOU RATHER</h1>
-        <div class="options">
-        <button class="pure-button" id="btn-info">Option 1</button>
-        <button class="pure-button" id="btn-info">Option 2</button>
+  
+    <div class="theme-container">
+        
+            <div class="splash-head">
+                
+                <h1 >WOULD YOU RATHER</h1>
+            </div>
+            
+            <div class="options">
+                <!-- two buttons which display the two left and right options -->
+                <button class="pure-button" id="" type="submit">Have Corona Virus</button>
+                <button class="pure-button" id="" type="submit">Have Bed Bugs</button>
+            </div>
+            
+            <div class="footer"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/menu.js"></script>
     </div>
-
-
-    <div class="footer"></div>
-
-
-    <script src="js/game.js"></script>
-
    
-
-
 </body>
 
 </html>

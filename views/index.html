@@ -14,7 +14,9 @@
 <body>
 
     <div class="header">
-        <h1><i class="fas fa-play-circle fa-lg"></i></h1>
+        <label class="switch">
+            <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
+             </label>
     </div>
 
     <div id="layout">
@@ -26,40 +28,49 @@
 
         <div id="menu">
             <div class="pure-menu">
-                <a class="pure-menu-heading" href="#"><i class="fas fa-cog fa-sm"> Menu </a></i>
+                <a class="pure-menu-heading" href="#"><i class="fas fa-bars fa-sm"> Menu </a></i>
 
                 <ul class="pure-menu-list">
 
-                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link"><i class="fas fa-play-circle fa-sm"> Home </a></i>
+                    <li class="pure-menu-item">
+                        <a href="index.html" class="pure-menu-link">
+                            <i class="fas fa-house-user fa-sm"> Home </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="create.html" class="pure-menu-link"><i class="fas fa-edit fa-sm"> Create Question </a></i>
+                    <li class="pure-menu-item">
+                        <a href="game.html" class="pure-menu-link">
+                            <i class="fas fa-play-circle fa-sm"> Play </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link"><i class="far fa-envelope fa-sm"> Contact </a></i>
+                    <li class="pure-menu-item">
+                        <a href="create.html" class="pure-menu-link">
+                            <i class="fas fa-edit fa-sm"> Create Question </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="signup.html" class="pure-menu-link"><i class="fas fa-user-plus"> Sign Up </a></i>
+                    <li class="pure-menu-item">
+                        <a href="signup.html" class="pure-menu-link">
+                            <i class="fas fa-user-plus"> Sign-up </a></i>
                     </li>
-
                 </ul>
             </div>
         </div>
     </div>
+    <div class="theme-container">
+         
+           <div class="splash-head">
 
+               <h1> WOULD YOU RATHER</h1>
+            </div>
+               
+            <p class="splash-subhead"> Make the conversation more interesting. Get to know your friends on a deeper level. In this hilarious game, players MUST choose an answer to questions begining with <strong>Would You Rather"</strong>".</p>
 
-    <div class="splash">
-        <h1 class="splash-head" id="shaking">WOULD YOU RATHER</h1>
+            <p><a href="game.html" id="playBtn" class="pure-button pure-button-primary">Play The Game</a></p>
 
-        <p class="splash-subhead"> Make the conversation more interesting. Get to know your friends on a deeper level. In this hilarious game, players MUST choose an answer to questions begining with, <strong>"Would You Rather"</strong>.</p>
-
-        <p><a href="game.html" id="playBtn" class="pure-button pure-button-primary">Play The Game</a></p>
-
+        
     </div>
-    </div>
-
 
     <div class="footer"></div>
 
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/menu.js"></script>
-    
+
 </body>
 
 </html>

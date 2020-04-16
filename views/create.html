@@ -7,13 +7,16 @@
     <meta name="description">
     <script src="https://kit.fontawesome.com/5ebe19f690.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    <link rel="stylesheet" href="layout/css/create.css">
+    <link rel="stylesheet" href="layout/css/style.css">
     <title>would you rather</title>
 </head>
 
 <body>
+
     <div class="header">
-        <h1><i class="fas fa-edit fa-lg"></i></h1>
+        <label class="switch">
+            <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
+             </label>
     </div>
 
     <div id="layout">
@@ -25,38 +28,64 @@
 
         <div id="menu">
             <div class="pure-menu">
-                <a class="pure-menu-heading" href="#"><i class="fas fa-cog fa-sm"> Menu </a></i>
+                <a class="pure-menu-heading" href="#"><i class="fas fa-bars fa-sm"> Menu </a></i>
 
                 <ul class="pure-menu-list">
 
-                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link"><i class="fas fa-play-circle fa-sm"> Home </a></i>
+                    <li class="pure-menu-item">
+                        <a href="index.html" class="pure-menu-link">
+                            <i class="fas fa-house-user fa-sm"> Home </a></i>
                     </li>
+                    <li class="pure-menu-item">
+                        <a href="game.html" class="pure-menu-link">
+                            <i class="fas fa-play-circle fa-sm"> Play </a></i>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="create.html" class="pure-menu-link">
+                            <i class="fas fa-edit fa-sm"> Create Question </a></i>
+                        </li>
 
-                    <li class="pure-menu-item"><a href="create.html" class="pure-menu-link"><i class="fas fa-edit fa-sm"> Create Question </a></i>
-                    </li>
-
-                    <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link"><i class="far fa-envelope fa-sm"> Contact </a></i>
-                    </li>
-                    <li class="pure-menu-item"><a href="signup.html" class="pure-menu-link"><i class="fas fa-user-plus"> Sign Up </a></i>
+                    <li class="pure-menu-item">
+                        <a href="signup.html" class="pure-menu-link">
+                            <i class="fas fa-user-plus"> Sign-up </a></i>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="splash">
-        <h1 class="splash-head" >Write your own <strong>"Would You Rather"</strong> questions!</h1>
-        <p class="splash-subhead">Write two choices in the boxes below. You do not need to include the "would you rather" part of the question.</p>
-           <div class="options">
-            <input class="btn info" id="btn-info"></input>
-            <input class="btn info" id="btn-info"></input>
-           
-           
-            <button class="pure-button pure-button-primary" id="submit">Submit</button>
-        </div>
-    </div>
-    
-    <div class="footer"></div>
+    <div class="theme-container">
 
+       
+            <div class="splash-head">
+                <h1>Create your own Question</h1>
+            </div>
+                <div class="options">
+
+                    <form class="contact">
+                    </div>
+                    <!-- input boxes will send data back to db in left_choice and right_choice columns -->
+                    <div class="input-container">
+                        <i class="fas fa-pen icon"></i>
+                        <input class="input-field" type="subject" placeholder="Option one" name="msg">
+                    </div>
+                    
+                    <div class="input-container">
+                        <i class="fas fa-pen icon"></i>
+                        <input class="input-field" type="subject" placeholder="Option two" name="msg">
+                    </div>
+                    <button type="submit" class="pure-button" id="">SUBMIT</button>
+                </form>
+            </div>
+
+
+       
+    </div>
+
+
+    
+    <div class="footer"></div> -->
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/menu.js"></script>
 
 </body>
