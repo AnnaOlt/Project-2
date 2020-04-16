@@ -149,24 +149,153 @@ body {
     clip-path: polygon(0 65%, 100% 89%, 100% 100%, 0% 100%);
 }
 
-@keyframes shake {
-    0% {
-        transform: skewX(-13deg);
-    }
-    5% {
-        transform: skewX(13deg);
-    }
-    10% {
-        transform: skewX(-13deg);
-    }
-    15% {
-        transform: skewX(13deg);
-    }
-    20% {
-        transform: skewX(0deg);
-    }
-    100% {
-        transform: skewX(0deg);
+strong {
+    color: #0078e7;
+}
+
+.splash-container {
+    background: #ffffff;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.splash {
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.splash-head {
+    font-size: 35px;
+    font-weight: bold;
+    color: #0078e7;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-subhead {
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    background-color: #191818;
+    color: white;
+    text-align: center;
+}
+
+.timer {
+    padding-left: 200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Full-width input fields */
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #1370e9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: Pink;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
     }
 }
 
@@ -371,4 +500,18 @@ input:checked+.slider:before {
     height: 145px;
     text-align: center;
     background-color: #929292;
+}
+
+.pure-form {
+    width: 69vw;
+    height: 53%;
+    margin: auto;
+    position: absolute;
+    top: 49px;
+    bottom: 0;
+    right: 0;
+}
+
+.pure-form .pure-input-1-2 {
+    width: 50%;
 }

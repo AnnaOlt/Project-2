@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,13 +8,12 @@
     <script src="https://kit.fontawesome.com/5ebe19f690.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     <link rel="stylesheet" href="layout/css/style.css">
-    <title>would you rather</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
-
     <div class="header">
-        <h1><i class="fas fa-user-plus"></i></h1>
+        <h1><i class="fas fa-play-circle fa-lg"></i></h1>
     </div>
 
     <div id="layout">
@@ -23,67 +22,55 @@
 
             <span></span>
         </a>
-
         <div id="menu">
             <div class="pure-menu">
                 <a class="pure-menu-heading" href="#"><i class="fas fa-cog fa-sm"> Menu </a></i>
 
                 <ul class="pure-menu-list">
 
-                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link"><i
-                                class="fas fa-play-circle fa-sm"> Home </a></i>
+                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link"><i class="fas fa-play-circle fa-sm"> Home </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="create.html" class="pure-menu-link"><i
-                                class="fas fa-edit fa-sm"> Create Question </a></i>
+                    <li class="pure-menu-item"><a href="create.html" class="pure-menu-link"><i class="fas fa-edit fa-sm"> Create Question </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link"><i
-                                class="far fa-envelope fa-sm"> Contact </a></i>
+                    <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link"><i class="far fa-envelope fa-sm"> Contact </a></i>
                     </li>
-
-                    <li class="pure-menu-item">
-                        <a href="signup.html" class="pure-menu-link">
-                            <i class="fas fa-user-plus"> Sign-up </a></i>
+                    <li class="pure-menu-item"><a href="signup.html" class="pure-menu-link"><i class="fas fa-user-plus"> Sign Up </a></i>
                     </li>
 
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="theme-container">
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr />
 
-        <div class="splash">
-            <label class="switch">
-            <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required />
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required />
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+
+                <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom:15px"
+          />
+          Remember me
         </label>
 
-            <form class="contact">
-                <h2>Register Here</h2>
-                <div class="input-container">
-                    <i class="fa fa-user icon"></i>
-                    <input class="input-field" type="text" placeholder="Your Name" name="">
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
                 </div>
-
-                <div class="input-container">
-                    <i class="fa fa-envelope icon"></i>
-                    <input class="input-field" type="text" placeholder="Email" name="email">
-                </div>
-
-                <div class="input-container">
-                    <i class="fa fa-key icon"></i>
-                    <input class="input-field" type="password" placeholder="password" name="pas">
-                </div>
-
-                <button type="submit" class="btn">REGISTER</button>
-            </form>
-
-        </div>
-    </div>
-
-    <div class="footer"></div>
-
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/menu.js"></script>
-
+            </div>
+        </form>
 </body>
 
 </html>
