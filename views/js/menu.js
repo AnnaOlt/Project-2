@@ -1,5 +1,5 @@
-var quote = document.getElementById("theme");
-var quote = document.getElementById("theme-display");
+//var themedi = document.getElementById("theme");
+//var theme = document.getElementById("theme-display");
 
 $(document).ready(function() {
     $("#night-mode-js").click(function() {
@@ -17,8 +17,8 @@ $(document).ready(function() {
 
     var layout = document.getElementById('layout'),
         menu = document.getElementById('menu'),
-        menuLink = document.getElementById('menuLink'),
-        content = document.getElementById('main');
+        menuLink = document.getElementById('menuLink')
+        //    content = document.getElementById('main')
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
