@@ -63,18 +63,18 @@ router.post('/', async function (req, res) {
 
   const { title, left_choice, right_choice } = req.body;
 
-  if (!req.user) {
-    res.status(401).send({ error: 'Unauthorized!'});
-  } else {
-    const { user: { id: userId } } = req;
+  // if (!req.user) {
+  //   res.status(401).send({ error: 'Unauthorized!'});
+  // } else {
+  //   const { user: { id: userId } } = req;
 
-    const [ question, created ] = await db.question.findOrCreate({
-      where: {title, left_choice, right_choice},
-      defaults: {title, left_choice, right_choice, userId},
-    });
+  const [ question, created ] = await db.question.findOrCreate({
+    where: {title, left_choice, right_choice},
+    defaults: {title, left_choice, right_choice},
+  });
 
-    res.json({ question, created });
-  }
+  res.json({ question, created });
+  // }
 });
 
 // update existing question
@@ -82,9 +82,11 @@ router.put('/', async function (req, res) {
   
   const { id, title, left_choice, right_choice } = req.body;
 
-  if (!req.user) {
-    res.status(401).send({ error: 'Unauthorized!'});
-  } else if (!id) {
+  // if (!req.user) {
+  //   res.status(401).send({ error: 'Unauthorized!'});
+  // }
+
+  if (!id) {
     res.status(400).send({ error: 'Missing Question Id!'});
   } else {
 
@@ -107,7 +109,6 @@ router.put('/', async function (req, res) {
     } catch (error) {
       res.status(500).send({ error });
     }
-    
   }
 });
 
