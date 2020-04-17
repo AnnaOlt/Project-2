@@ -13,7 +13,9 @@
 
 <body>
     <div class="header">
-        <h1><i class="fas fa-play-circle fa-lg"></i></h1>
+        <label class="switch">
+            <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
+        </label>
     </div>
 
     <div id="layout">
@@ -24,51 +26,60 @@
         </a>
         <div id="menu">
             <div class="pure-menu">
-                <a class="pure-menu-heading" href="#"><i class="fas fa-cog fa-sm"> Menu </a></i>
+                <a class="pure-menu-heading" href="#"><i class="fas fa-bars fa-sm"> Menu </a></i>
 
                 <ul class="pure-menu-list">
 
-                    <li class="pure-menu-item"><a href="index.html" class="pure-menu-link"><i class="fas fa-play-circle fa-sm"> Home </a></i>
+                    <li class="pure-menu-item">
+                        <a href="index.html" class="pure-menu-link">
+                            <i class="fas fa-house-user fa-sm"> Home </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="create.html" class="pure-menu-link"><i class="fas fa-edit fa-sm"> Create Question </a></i>
+                    <li class="pure-menu-item">
+                        <a href="game.html" class="pure-menu-link">
+                            <i class="fas fa-play-circle fa-sm"> Play </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link"><i class="far fa-envelope fa-sm"> Contact </a></i>
+                    <li class="pure-menu-item">
+                        <a href="create.html" class="pure-menu-link">
+                            <i class="fas fa-edit fa-sm"> Create Question </a></i>
+                        </li>
+                    <li class="pure-menu-item">
+                        <a href="signup.html" class="pure-menu-link">
+                            <i class="fas fa-user-plus"> Sign-up </a></i>
                     </li>
-                    <li class="pure-menu-item"><a href="signup.html" class="pure-menu-link"><i class="fas fa-user-plus"> Sign Up </a></i>
-                    </li>
-
                 </ul>
             </div>
         </div>
-        <form action="action_page.php" style="border:1px solid #ccc">
-            <div class="container">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to create an account.</p>
-                <hr />
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required />
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required />
-
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
-
-                <label>
-          <input
-            type="checkbox"
-            checked="checked"
-            name="remember"
-            style="margin-bottom:15px"
-          />
-          Remember me
-        </label>
-
-                <div class="clearfix">
-                    <button type="submit" class="signupbtn">Sign Up</button>
-                    <button type="button" class="cancelbtn">Cancel</button>
-                </div>
+        <form action="action_page.php">
+            <div class="theme-container">
+                
+                   <div class="splash-head">
+                       <h1>SIGN UP</h1>
+                    </div>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr />
+                    
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required />
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required />
+                    
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                    
+                    <label>
+                        <input
+                        type="checkbox"
+                        checked="checked"
+                        name="remember"
+                        style="margin-bottom:15px"
+                        />Remember me </label>
+                        
+                        <div class="clearfix">
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                            <button type="button" class="cancelbtn">Cancel</button>
+                        </div>
+                    </div>
             </div>
         </form>
 </body>
