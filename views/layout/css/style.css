@@ -548,16 +548,20 @@ input:checked + .slider:before {
   }
 }
 
-.final {
+.timerfinal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
 }
 
-.final.show {
+.timerfinal.show {
   transform: translate(-50%, -50%) scale(1);
   animation: show 0.3s ease-in;
+}
+
+.timeup {
+  color: fuchsia;
 }
 
 @keyframes show {
@@ -632,4 +636,3 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%) rotate(-120deg);
   }
 }
-
