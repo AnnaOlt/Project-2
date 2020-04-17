@@ -3,9 +3,9 @@
 
 $(document).ready(function() {
   $("#night-mode-js").click(function() {
-    $(
-      ".theme-container, .splash-head, .pure-button, body, .theme, .btn"
-    ).toggleClass("night-mode");
+    $(".theme-container, .splash-head, body, .theme, .btn").toggleClass(
+      "night-mode"
+    );
     if ($("#night-mode-js").hasClass("night-mode")) {
       $("#night-mode-js").html("Night-mode");
     } else {
