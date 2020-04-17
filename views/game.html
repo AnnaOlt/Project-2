@@ -1,85 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" />
+    <script
+      src="https://kit.fontawesome.com/5ebe19f690.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+      integrity="sha384-"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="layout/css/style.css" />
+    <title>Would You Rather</title>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description">
-    <script src="https://kit.fontawesome.com/5ebe19f690.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    <link rel="stylesheet" href="layout/css/style.css">
-    <title>would you rather</title>
-</head>
-
-<body>
-
+  <body>
     <div class="header">
-        <label class="switch">
-            <input type="checkbox"id="night-mode-js" class="btn night mode" data-text-swap="day mode"><span class="slider round"></span>
-             </label>
+      <label class="switch">
+        <input
+          type="checkbox"
+          id="night-mode-js"
+          class="btn night mode"
+          data-text-swap="day mode"
+        /><span class="slider round"></span>
+      </label>
     </div>
-    <div class="timer">
-        <h2 class="time"></h2>
-        <div id="main"></div>
-    </div>
-
+    <!-- <div class="timer">
+      <h2 class="time"></h2>
+      <div id="main"></div>
+    </div> -->
 
     <div id="layout">
+      <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+      </a>
 
-        <a href="#menu" id="menuLink" class="menu-link">
+      <div id="menu">
+        <div class="pure-menu">
+          <a class="pure-menu-heading" href="#"
+            ><i class="fas fa-bars fa-sm"> Menu </i></a
+          >
 
-            <span></span>
-        </a>
-
-        <div id="menu">
-            <div class="pure-menu">
-                <a class="pure-menu-heading" href="#"><i class="fas fa-bars fa-sm"> Menu </a></i>
-
-                <ul class="pure-menu-list">
-
-                    <li class="pure-menu-item">
-                        <a href="index.html" class="pure-menu-link">
-                            <i class="fas fa-house-user fa-sm"> Home </a></i>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="game.html" class="pure-menu-link">
-                            <i class="fas fa-play-circle fa-sm"> Play </a></i>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="create.html" class="pure-menu-link">
-                            <i class="fas fa-edit fa-sm"> Create Question </a></i>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="signup.html" class="pure-menu-link">
-                            <i class="fas fa-user-plus"> Sign-up </a></i>
-                    </li>
-                </ul>
-            </div>
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+              <a href="index.html" class="pure-menu-link">
+                <i class="fas fa-house-user fa-sm"> Home </i></a
+              >
+            </li>
+            <li class="pure-menu-item">
+              <a href="game.html" class="pure-menu-link">
+                <i class="fas fa-play-circle fa-sm"> Play </i></a
+              >
+            </li>
+            <li class="pure-menu-item">
+              <a href="create.html" class="pure-menu-link">
+                <i class="fas fa-edit fa-sm"> Create Question </i></a
+              >
+            </li>
+            <li class="pure-menu-item">
+              <a href="signup.html" class="pure-menu-link">
+                <i class="fas fa-user-plus"> Sign-up </i></a
+              >
+            </li>
+          </ul>
         </div>
-
+      </div>
     </div>
 
-  
     <div class="theme-container">
-        
-            <div class="splash-head">
-                
-                <h1 >WOULD YOU RATHER</h1>
-            </div>
-            
-            <div class="options">
-                <!-- two buttons which display the two left and right options -->
-                <button class="pure-button" id="" type="submit">Have Corona Virus</button>
-                <button class="pure-button" id="" type="submit">Have Bed Bugs</button>
-            </div>
-            
-            <div class="footer"></div>
+      <div class="splash-head">
+        <h1>WOULD YOU RATHER</h1>
+      </div>
+      <div id="game-container">
+        <div class="options">
+          <!-- two buttons which display the two left and right options -->
+          <button class="pure-button" id="left_choice" type="submit">
+            Have Corona Virus
+          </button>
+          <button class="pure-button" id="right_choice" type="submit">
+            Have Bed Bugs
+          </button>
         </div>
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="js/game.js"></script>
-        <script src="js/menu.js"></script>
-    </div>
-   
-</body>
+      </div>
 
+      <div class="footer"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.canvasjs.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
 </html>

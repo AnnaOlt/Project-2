@@ -2,7 +2,6 @@ html,
 body {
   color: #777;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #layout,
@@ -158,7 +157,7 @@ strong {
   text-align: center;
   transition: all 0.5s ease-in;
   color: rgb(51, 51, 51);
-  height: 100%;
+  height: 100vh;
   width: 80%;
   margin: auto;
   top: 10px;
