@@ -152,6 +152,7 @@ body {
 strong {
   color: #0078e7;
 }
+
 .theme-container {
   padding: 5%;
   text-align: center;
@@ -186,17 +187,6 @@ strong {
   color: rgb(0, 0, 0);
   letter-spacing: 0.05em;
   opacity: 0.8;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  height: 30px;
-  bottom: 0;
-  width: 100%;
-  background-color: #191818;
-  color: white;
-  text-align: center;
 }
 
 .timer {
