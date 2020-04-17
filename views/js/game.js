@@ -16,12 +16,9 @@ $(document).ready(function() {
     });
   });
 
-  $("#hide").click(function() {
-    $("button").hide();
-  });
-
-  $("#show").click(function() {
-    $("button").show();
+  $("#nextBtn").hide("#nextBtn");
+  $(".options").click(function() {
+    $("#nextBtn").show("#nextBtn");
   });
 });
 
