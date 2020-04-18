@@ -5,6 +5,7 @@ const router = express.Router();
 const db = require("../models");
 
 const questionAttributes = [
+  'id',
   'title',
   'left_choice',
   'right_choice',
