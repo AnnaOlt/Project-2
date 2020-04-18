@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $("#nextBtn").hide("#nextBtn");
   $.ajax("api/questions/random", {
     type: "GET",
   }).then(function(question) {
@@ -16,7 +17,6 @@ $(document).ready(function() {
     });
   });
 
-  $("#nextBtn").hide("#nextBtn");
   $(".options").click(function() {
     $("#nextBtn").show("#nextBtn");
   });
