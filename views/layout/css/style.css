@@ -518,6 +518,10 @@ input:checked + .slider:before {
   box-shadow: 0 4px 0 rgb(241, 134, 209);
 }
 
+#gif-container {
+  margin: 2em;
+}
+
 /* Create */
 
 .prompts {
@@ -537,8 +541,8 @@ input:checked + .slider:before {
 .timercounter {
   margin-top: 60px;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -560,8 +564,8 @@ input:checked + .slider:before {
 
 .timerfinal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0%;
+  left: 25%;
   transform: translate(-50%, -50%) scale(0);
 }
 
