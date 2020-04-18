@@ -54,39 +54,38 @@
         </div>
     </div>
     <div class="theme-container">
-
-       
-            <div class="splash-head">
-                <h1>Create your own Question</h1>
+      <div class="splash-head">
+        <h1>Create your own Question</h1>
+      </div>
+      <div class="options">
+    
+        <form id="create-question-form">
+          <!-- input boxes will send data back to db in left_choice and right_choice columns -->
+          <div class="input-container">
+            <i class="fas fa-pen icon"></i>
+            <input id="question-title" class="input-field" type="subject" placeholder="Title" name="title">
+          </div>
+          <div class="prompts">
+            <div class="input-container">
+              <i class="fas fa-pen icon"></i>
+              <textarea id="left-choice" class="input-field" type="subject" placeholder="Option one"
+                name="left_choice"></textarea>
             </div>
-                <div class="options">
-
-                    <form class="contact">
-                    </div>
-                    <!-- input boxes will send data back to db in left_choice and right_choice columns -->
-                    <div class="input-container">
-                        <i class="fas fa-pen icon"></i>
-                        <input class="input-field" type="subject" placeholder="Option one" name="msg">
-                    </div>
-                    
-                    <div class="input-container">
-                        <i class="fas fa-pen icon"></i>
-                        <input class="input-field" type="subject" placeholder="Option two" name="msg">
-                    </div>
-                    <button type="submit" class="pure-button" id="">SUBMIT</button>
-                </form>
+    
+            <div class="input-container">
+              <i class="fas fa-pen icon"></i>
+              <textarea id="right-choice" class="input-field" type="subject" placeholder="Option two"
+                name="right_choice"></textarea>
             </div>
-
-
-       
+          </div>
+          <button type="submit" class="pure-button" form="create-question-form">SUBMIT</button>
+        </form>
+      </div>
     </div>
 
-
-    
-    
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/menu.js"></script>
-    
+
     <div class="footer"></div> 
 </body>
 
