@@ -32,6 +32,9 @@ function answerQuestion(id, answer) {
   });
 }
 
+document.getElementById("nextBtn").onclick = function() {
+}
+
 function renderResults(question, answer) {
   $("#game-container").empty();
 
