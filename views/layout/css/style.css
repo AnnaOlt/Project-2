@@ -166,11 +166,10 @@ strong {
   text-align: center;
   text-transform: uppercase;
   height: 100vh;
-  width: 80vw;
+ 
 }
 
 .splash-head {
-  font-size: 30px;
   font-weight: bold;
   color: #0078e7;
   border: 2px solid rgb(0, 0, 0);
@@ -180,7 +179,7 @@ strong {
   line-height: 1.7em;
   margin-bottom: 1em;
   justify-self: center;
-  width: 70vw;
+  width: 100%;
 }
 
 .splash-subhead {
