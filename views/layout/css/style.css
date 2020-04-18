@@ -461,14 +461,17 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   flex-basis: auto;
   flex-grow: 40%;
   flex-shrink: 80%;
   flex-wrap: nowrap;
+  word-wrap: break-word;
 }
 
 .pure-button {
+  white-space: normal;
+  word-wrap: break-word;
   width: 30vw;
   padding: 10px;
   font-size: 1.5em;
