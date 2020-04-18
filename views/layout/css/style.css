@@ -513,6 +513,20 @@ input:checked + .slider:before {
   box-shadow: 0 4px 0 rgb(241, 134, 209);
 }
 
+/* Create */
+
+.prompts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#create-question-form {
+  width: 100%;
+}
+
 /* Timer */
 
 .timercounter {
